@@ -1,0 +1,12 @@
+<div class="menu">
+  <nav class="navbar">
+    <span>
+      <img src="./../../../assets/img/teologo.png" width="40"alt="logo">
+    </span>
+    <span *ngFor="let item of items">
+      <a [href]="item.url">
+        <button mat-button>{{item.name}}</button>
+      </a>
+    </span>
+  </nav>
+</div>
