@@ -8,6 +8,7 @@ import { MainComponent } from './components/main/main.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { MainBannerComponent } from './components/main-banner/main-banner.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 
@@ -17,7 +18,8 @@ import { MainBannerComponent } from './components/main-banner/main-banner.compon
     MainComponent,
     MenuComponent,
     FooterComponent,
-    MainBannerComponent
+    MainBannerComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
