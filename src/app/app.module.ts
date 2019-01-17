@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainBannerComponent } from './components/main-banner/main-banner.component';
 import { MainComponent } from './components/main/main.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 
 
@@ -22,7 +23,8 @@ import { MenuComponent } from './components/menu/menu.component';
     FooterComponent,
     MainBannerComponent,
     MainComponent,
-    MenuComponent
+    MenuComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

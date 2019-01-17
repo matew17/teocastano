@@ -1,0 +1,30 @@
+.app-portfolio {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    padding: 0 16px;
+
+    .item {
+        align-items: center;
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        padding: 0 16px;
+        text-align: center;
+        width: 33%;
+
+        h1 {
+            height: 20%;
+        }
+        .image {
+            width: 30%;
+            
+            img {
+                border: solid 5px #222;
+                border-radius: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

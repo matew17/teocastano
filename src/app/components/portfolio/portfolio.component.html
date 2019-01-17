@@ -1,0 +1,9 @@
+<div class="content app-portfolio">
+  <div *ngFor="let port of portfolio" class="item">
+    <div class="image">
+      <img [src]="port.img" [alt]="port.title">
+    </div>
+    <h1>{{port.title}}</h1>
+    <p>{{port.desc}}</p>
+  </div>
+</div>
