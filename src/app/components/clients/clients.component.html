@@ -1,0 +1,8 @@
+<div class="content app-client">
+  <div *ngFor="let client of clients" class="client">
+    <a [href]="client.web" target="_blank">
+      <img [src]="client.img" alt="Imagen de cliente {{client.web}}">
+    </a>
+    <a [href]="client.web" target="_blank">{{client.name}}</a>
+  </div>
+</div>

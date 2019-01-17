@@ -1,31 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ContactComponent } from './components/contact/contact.component';
+import { MaterialModule } from './material.module';
 import { NgModule } from '@angular/core';
-import { MaterialModule } from './modules/material.module';
 
-
-import { AppComponent } from './app.component';
-import { MainComponent } from './components/main/main.component';
-import { MenuComponent } from './shared/menu/menu.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { MainBannerComponent } from './components/main-banner/main-banner.component';
 import { AboutComponent } from './components/about/about.component';
+import { AppComponent } from './app.component';
+import { ClientsComponent } from './components/clients/clients.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MainBannerComponent } from './components/main-banner/main-banner.component';
+import { MainComponent } from './components/main/main.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 
 @NgModule({
   declarations: [
+    AboutComponent,
     AppComponent,
-    MainComponent,
-    MenuComponent,
+    ClientsComponent,
+    ContactComponent,
     FooterComponent,
     MainBannerComponent,
-    AboutComponent
+    MainComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     MaterialModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

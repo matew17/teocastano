@@ -1,24 +1,13 @@
-<div class="about">
+<div class="about content">
   <div class="logo">
-    <img src="./assets/img/about.jpg" alt="About">
+    <img [src]="aboutImg" alt="About">
   </div>
 
   <div class="text">
-    <h1>Acerca <br><span>de nosotros. </span></h1>
-    <div class="buttons">
-      <button
-      *ngFor="let button of buttons"
-       mat-button 
-       [ngClass]="{'button-active': selectedTab === button.value}" 
-       (click)="changeSelection(button.value)">
-        {{button.text}}
-      </button>
-    </div>
+    <h1>{{content.title.up}} <br><span>{{content.title.down}}</span></h1>
 
-    <div class="content">
-      <div *ngIf="selectedTab === 1">
-        Quienes somos contenido
-      </div>
+    <div class="description">
+      {{content.description}}
     </div>
 
   </div>

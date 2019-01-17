@@ -1,0 +1,17 @@
+<div class="menu">
+  <nav class="navbar">
+    <span>
+      <a [href]="'#inicio'">
+        <img 
+          [src]="logo"
+          width="40"
+          alt="logo">
+      </a>
+    </span>
+    <span *ngFor="let item of items">
+      <a [href]="item.url">
+        <button mat-button>{{item.name}}</button>
+      </a>
+    </span>
+  </nav>
+</div>

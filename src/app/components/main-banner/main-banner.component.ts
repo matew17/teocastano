@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainBannerComponent implements OnInit {
 
+  bannerImg: string = 'http://res.cloudinary.com/teocastano/image/upload/c_scale,f_auto,w_1400/v1534474357/teocastano.com/banner.jpg';
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

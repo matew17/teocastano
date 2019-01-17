@@ -1,32 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-	selector: 'app-about',
-	templateUrl: './about.component.html',
-	styleUrls: [ './about.component.scss' ]
+  selector: "app-about",
+  templateUrl: "./about.component.html",
+  styleUrls: ["./about.component.scss"]
 })
 export class AboutComponent implements OnInit {
-	selectedTab: number = 1;
-	buttons: any[] = [
-		{
-			text: '¿Quienes somos?',
-			value: 1
-		},
-		{
-			text: '¿Que hacemos?',
-			value: 2
-		},
-		{
-			text: '¿Acerca de nosotros?',
-			value: 3
-		}
-	];
+  aboutImg: string = "http://res.cloudinary.com/teocastano/image/upload/c_scale,f_auto,w_1379/v1534474337/teocastano.com/about.jpg";
+  content = {
+    title: {
+      up: 'Acerca',
+      down: 'de nosotros.'
+    },
+    description: `Somos una StartUp que se dedica al desarrollo de soluciones digitales (Sitios Web, aplicaciones a la medida, Apps Moviles), estamos ubicados en Medellin (Ant).`
+  }
 
-	constructor() {}
+  constructor() { }
 
-	ngOnInit() {}
+  ngOnInit() { }
 
-	changeSelection(selected: number) {
-		this.selectedTab = selected;
-	}
 }
